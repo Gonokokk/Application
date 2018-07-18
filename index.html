@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div class="mainWrapper">
+		<!-- Autorization -->
+		<div class="wrapper_auth">
+			<h4>Hello, my Friend! Autorize, please!</h4>
+			<form class="authorization">
+				<input type="text" placeholder="Your name" class="name">
+				<input type="email" placeholder="Your email" class="email">
+				<div class="error" hidden>Enter all field</div>
+				<input type="button" value="Enter" class="enter">
+			</form>
+		</div>
+		
+		<!-- List of notice -->
+		<div class="wrapper" hidden>
+			<input type="button" value="Add new notice" class="add_notice">
+			<div class="notice"></div>
+		</div>
+
+		<!-- Modal window -->
+		<div class="modal" hidden>
+			<div class="form_for_notice">
+				<form>
+					<input type="text" placeholder="title" class="title">
+					<input type="text" placeholder="description" class="description">
+					<input type="button" value="Add" class="add">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<script type="text/javascript" src="js/autorization.js"></script>
+	<script type="text/javascript" src="js/list.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>
